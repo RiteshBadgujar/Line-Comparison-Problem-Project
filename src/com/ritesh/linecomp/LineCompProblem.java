@@ -17,20 +17,21 @@ public class LineCompProblem {
 		x2=scanner.nextInt();
 		y1=scanner.nextInt();
 		y2=scanner.nextInt();
-	}
+		}
 	
 	public double LineCalculate() {
 		 return Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
-	}
+		}
 	
 	public  void Linecheck(LineCompProblem linecomproblem2) {
+		
 		if(this.LineCalculate() == linecomproblem2.LineCalculate()) {
 			System.out.println("The line Are Equal");
 		}
 		else {
 			System.out.println("The line Are Not Equal");
 		}
-	}
+ }
 	
 	public static void main(String[] args) {
 		
