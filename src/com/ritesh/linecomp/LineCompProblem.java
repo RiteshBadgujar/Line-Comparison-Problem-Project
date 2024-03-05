@@ -17,6 +17,7 @@ public class LineCompProblem {
 		x2=scanner.nextInt();
 		y1=scanner.nextInt();
 		y2=scanner.nextInt();
+		
 		}
 	
 	public double LineCalculate() {
@@ -28,8 +29,11 @@ public class LineCompProblem {
 		if(this.LineCalculate() == linecomproblem2.LineCalculate()) {
 			System.out.println("The line Are Equal");
 		}
+		else if(this.LineCalculate() > linecomproblem2.LineCalculate()) {
+				System.out.println("Line 1 Is Greater Than Line 2");
+		}
 		else {
-			System.out.println("The line Are Not Equal");
+			System.out.println("Line 2 Is Greater Than 1 Line ");
 		}
  }
 	
@@ -42,8 +46,7 @@ public class LineCompProblem {
 		
 		linecomproblem.LineInput();
 		linecomproblem2.LineInput();
-		linecomproblem.LineCalculate();
-		linecomproblem2.LineCalculate();
+		
 		linecomproblem.Linecheck(linecomproblem2);
 	}	
 }
